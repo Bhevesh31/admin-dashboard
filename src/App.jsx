@@ -10,9 +10,9 @@ import { productInputs, userInputs } from './formSource'
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename='/admin-dashboard'>
         <Routes>
-          <Route path='/admin-dashboard'>
+          
               <Route index element={<Home/>}/>
               <Route path='login' element={<Login/>} />
               <Route path='users'> 
@@ -25,7 +25,7 @@ const App = () => {
                 <Route path=':productID' element={<Single/>} />
                 <Route path = 'new' element={<New inputs={productInputs} title="Add New Product"/>} />
               </Route>
-          </Route>
+         
         </Routes>
       </BrowserRouter>
     </div>
