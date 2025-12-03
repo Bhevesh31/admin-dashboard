@@ -12,7 +12,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/'>
+          <Route path='/admin-dashboard'>
               <Route index element={<Home/>}/>
               <Route path='login' element={<Login/>} />
               <Route path='users'> 

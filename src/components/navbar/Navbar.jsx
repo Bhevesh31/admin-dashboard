@@ -22,7 +22,7 @@ const Navbar = () => {
             English
           </div>
 
-          <div id="item" className='bg-green-300 flex items-center mr-5'>
+          <div id="item" className=' flex items-center mr-5'>
               <span className=' text-[20px]' ><DarkModeOutlinedIcon/></span>
           </div>
           <div id="item" className='flex items-center mr-5'>
