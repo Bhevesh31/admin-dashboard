@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from './pages/home/Home'
-import {  BrowserRouter, Route, Routes } from 'react-router'
+import {  HashRouter, Route, Routes } from 'react-router'
 import Login from './pages/login/Login'
 import List from './pages/list/List'
 import Single from './pages/single/Single'
@@ -10,7 +10,7 @@ import { productInputs, userInputs } from './formSource'
 const App = () => {
   return (
     <div>
-      <BrowserRouter basename='/admin-dashboard'>
+      <HashRouter >
         <Routes>
           
               <Route index element={<Home/>}/>
@@ -27,7 +27,7 @@ const App = () => {
               </Route>
          
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }
